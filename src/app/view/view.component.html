@@ -1,0 +1,22 @@
+<!-- view.component.html -->
+
+<div class="container">
+    <h2>Editar Alumnos</h2>
+  
+    @for (alumno of Alumnos; track $index){
+        <div class="alumno">
+            <label>Nombre:</label>
+            <input type="text" [(ngModel)]="alumno.nombre" required>
+    
+            <label>Cuenta:</label>
+            <input type="text" [(ngModel)]="alumno.cuenta" required>
+    
+            <label>Grupo:</label>
+            <input type="text" [(ngModel)]="alumno.grupo" required>
+    
+            <button (click)="onEdit(alumno, $index)">Editar</button>
+            <button (click)="onDelete($index)">Eliminar</button>
+        </div>
+    }
+</div>
+  

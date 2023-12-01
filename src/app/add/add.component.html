@@ -1,0 +1,18 @@
+<!-- add.component.html -->
+
+<div class="container">
+    <h2>Agregar Alumno</h2>
+    <form (ngSubmit)="onSubmit()">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" name="nombre" [(ngModel)]="alumno.nombre" required>
+  
+      <label for="cuenta">Cuenta:</label>
+      <input type="text" id="cuenta" name="cuenta" [(ngModel)]="alumno.cuenta" required>
+  
+      <label for="grupo">Grupo:</label> 
+      <input type="text" id="grupo" name="grupo" [(ngModel)]="alumno.grupo" required>
+  
+      <button type="submit">Agregar</button>
+    </form>
+  </div>
+  

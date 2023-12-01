@@ -1,0 +1,13 @@
+<!-- stats.component.html -->
+
+<div class="container">
+    <h2>Estadísticas de Alumnos por Grupo</h2>
+  
+    <div *ngFor="let alumnoGrupo of AlumnosporGrupo; let i = index">
+      <div>
+        <h3>Grupo {{alumnoGrupo.grupo}}</h3>
+        <p>Alumnos: {{alumnoGrupo.cantidad}}</p>
+      </div>
+    </div>
+</div>
+  
